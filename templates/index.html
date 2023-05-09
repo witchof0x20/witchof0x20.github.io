@@ -5,6 +5,5 @@
   Welcome to my homepage! 
 </h1>
 I'm Jade. 
-{% set blog_section = get_section(path="blog/_index.md") %}
-<p>Click <a href="{{ blog_section.path | safe }}">here</a> to see my blog.</p>
+<p>Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to see my blog.</p>
 {% endblock content %}
