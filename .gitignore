@@ -1,0 +1,4 @@
+# The output files
+/public
+# vim
+.*.sw*
