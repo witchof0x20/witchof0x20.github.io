@@ -1,0 +1,2 @@
+{% set resized = resize_image(format="webp", path=page.colocated_path ~ name, width=width, op="fit_width") %}
+<img alt="{{ alt }}" title = "{{ alt }}" src="{{ resized.url | safe }}" />

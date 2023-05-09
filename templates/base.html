@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="{{config.extra.author}}" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="{{ get_url(path='/style.css') | safe }}">
+  <link rel="icon" href="{{ get_url(path='favicon.svg') | safe }}" type="image/svg+xml" sizes=any>
+  <!-- TODO: convert icon to png/ico automatically and include as fallback -->
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock %}
+    </div>
+  </section>
+</body>
+
+</html>
